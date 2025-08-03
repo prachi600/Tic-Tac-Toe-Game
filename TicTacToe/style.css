@@ -4,10 +4,17 @@
 }
 
 body {
-    background-color: #4f5d75;
-    text-align: center;
-
+   text-align: center;
+   background: linear-gradient(to right, #1e3c72, #2a5298); /* Blue gradient */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-family: "Segoe UI", sans-serif;
 }
+
+
+
 .container{
     height: 70vh;
     display: flex;
@@ -35,26 +42,48 @@ body {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
     font-size: 8vmin;
     color:#1F0812 ;
-    background-color:#e4959e;
+    background-color:#FFFFFF;
 }
 
 #reset-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #1F0812;
+    background-color: #FF8C42;
     color: #fff;
     border-radius: 1rem;
     border: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 
 }
+#reset-btn:hover {
+  background-color: #ff8a8a;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+
 #new-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #1F0812;
+    background-color: #FF8C42;
     color: #fff;
     border-radius: 1rem;
     border: none;
+    font-weight:bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    
 }
+#new-btn:hover {
+  background-color: #ff8a8a;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
 
 #msg{
     color: #ffffcf;
@@ -72,3 +101,21 @@ body {
 .hide{
     display: none;
 }
+
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.heading {
+  font-size: 3rem;
+  color: #ffeb3b; /* Bright yellow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow */
+  margin-bottom: 20px;
+  animation: pop 0.6s ease;
+  letter-spacing: 2px;
+  font-weight: bold;
+  user-select: none;
+}
+
+
